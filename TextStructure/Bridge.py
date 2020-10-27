@@ -1,6 +1,5 @@
 import TextBlock
 
-class Verse(TextBlock):
+class Bridge(TextBlock):
     def __init__(self, text):
         super().__init__(text)
-
