@@ -12,6 +12,7 @@ class Song:
             Part.Coda : self.codas,
             Part.Bridge : self.bridges
         }
+        self.title = "-"
 
     def get_part(self, part):
         return self.map[part]
