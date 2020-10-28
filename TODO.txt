@@ -1,0 +1,48 @@
+Necessary===========================================================================================================
+
+When get files:
+-see types of song structures
+-see file type and how to read
+-see if uniform structure or varies
+
+ReadFile:
+-module to read .docx or .ppt or whatever
+-module to identify and retrieve song parts
+
+
+Important===========================================================================================================
+
+Settings:
+-store path to output
+-default songbook name
+-what to append at end; "" for nothing
+ -possible boolean to turn this feature on/off
+-different sections: song, songbook, general
+
+SongTypes:
+-Create more song-types besides Traditional, but unsure yet
+ -Rondo, AB, ABA?
+ 
+ JsonUtils:
+-try no guid, or empty guid [generates guid + formats at creation of new song]
+-ids might be necessary; [nah]
+ -what is causing the * upon opening? does opening twice do the same thing? [see if it happens again]
+-guid and videoduration are added automatically when file updated. no need to have it
+
+Optional===========================================================================================================
+
+Song:
+-save verses without 1., 2.,R. etc. only the text
+ -add the 1.,2.,R., later--and uniformly
+ 
+ UI:
+-Ask for songbook name when program run
+ -sanitize name
+ 
+SongDecorator modules:
+-Add end (adds *** or w/e to the end of the song)
+-Add 5/6, 4/6, etc at the bottom to indicate pages left
+
+Songbook:
+-create classes for various options within songbook 
+ -like transition, text justification, etc
