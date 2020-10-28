@@ -7,7 +7,11 @@ class JsonSongbook:
     def get_as_json_format(self):
         result = {
             "Songs" : self.json_songs,
-            "Text": self.songbook_name
+            "Style" : {"Body" : {
+                "VerticalAlignment" : 1,
+                "Transition" : 0
+            }},
+            "Text" : self.songbook_name
         }
 
         return result

@@ -1,7 +1,11 @@
 import json
+import re
 from JsonUtils.JsonSong import JsonSong
 from JsonUtils.JsonSongbook import JsonSongbook
 from SongLogic import SongLogicFactory
+
+def remove_quotes_from_keys(json_text):
+    return re.sub(r'"(.*?)"[ ]*?:', r'\1:', json_text)
 
 def song_to_json_format(song):
     song_logic = SongLogicFactory.get_song_logic(song)
@@ -21,10 +25,5 @@ def save_songs(song):
     js_songbook = JsonSongbook("testhopeitworks", [js_song]).get_as_json_format()
     with open(path, 'w') as outfile:
         json_string = json.dumps(js_songbook, indent=1)
-        json_string = json_string.replace('"Songs"', 'Songs')
-        json_string = json_string.replace('"Guid"', 'Guid')
-        json_string = json_string.replace('"Verses"', 'Verses')
-        json_string = json_string.replace('"Text"', 'Text')
-        json_string = json_string.replace('"VideoDuration"', 'VideoDuration')
+        json_string = remove_quotes_from_keys(json_string)
         outfile.write(json_string)
-
