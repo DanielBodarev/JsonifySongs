@@ -1,4 +1,4 @@
-import TextBlock
+from SongStructure.TextBlock import TextBlocks
 
 class Coda(TextBlock):
     def __init__(self, text):

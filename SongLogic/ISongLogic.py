@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class ITextLogic(ABC):
+class ISongLogic(ABC):
 
     def __init__(self, song):
         self.song = song

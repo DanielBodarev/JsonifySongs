@@ -1,12 +1,12 @@
-from enum import Enum
+from enum import Enum, auto
 
 class Amount(Enum):
-    None = auto(),
-    One = auto(),
-    Many = auto()
+    Zero = 1,
+    One = 2,
+    Many = 3
 
 class Part(Enum):
     Verse = auto(),
-    Refren = auto(),
+    Refrain = auto(),
     Coda = auto(),
     Bridge = auto()

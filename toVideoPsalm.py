@@ -1,36 +1,26 @@
 import json
+from SongStructure.Verse import Verse
+from SongStructure.Refrain import Refrain
+from SongStructure.Song import Song
+from SongLogic import SongLogicFactory
 """
 with open('Speranta.json') as json_file:
     data = json.load(json_file)"""
 
-class TextBlock:
-    def __init__(self, text):
-        self.text = text
+verses = [
+    Verse("This is verse one. It's a very good song"),
+    Verse("This is verse two. Hope you enjoy it too"),
+    Verse("This is verse three. It's all we can sing"),
+]
 
-    def __str__(self):
-        return self.text
+refrains = [
+    Refrain("We now have the refrain. Sing the refrain")
+]
 
-class Verse (TextBlock):
-    def __init__(self, text):
-        super().__init__(text)
+song = Song()
+song.add_verses(verses)
+song.add_refrains(refrains)
 
-class Refren (TextBlock):
-    def __init__(self, text):
-        super().__init__(text)
+song_logic = SongLogicFactory.get_song_logic(song)
 
-class Song:
-    def __init__(self):
-        self.verses = []
-        self.refren = []
-        self.codas = []
-
-    def add_verse(self, verse):
-        self.verses.append(verse)
-
-    def add_refren(self, refren);
-        self.refren.append(refren)
-
-    def add_coda(self, coda):
-        self.codas.add(coda)
-
-        
+print([str(x) for x in song_logic.get_sequenced_song()])

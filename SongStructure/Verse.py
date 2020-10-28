@@ -1,4 +1,4 @@
-import TextBlock
+from SongStructure.TextBlock import TextBlock
 
 class Verse(TextBlock):
     def __init__(self, text):
