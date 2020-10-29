@@ -1,11 +1,19 @@
 from SongAnalyzer.SongPropertyChecker import SongPropertyChecker
 from SongAnalyzer.SongProperties import Amount, Part
 from SongLogic.SongLogics.Traditional import Traditional
+from SongLogic.SongLogics.Rondo import Rondo
+from SongLogic.SongLogics.Sequence import Sequence
 from SongAnalyzer.Signature import Signature
 
 _signatures = [
     [Signature(bridges=Amount.Zero, codas=Amount.Zero, refrains=Amount.One, verses=Amount.Many),
-    Traditional]
+    Traditional],
+    [Signature(bridges=Amount.Zero, codas=Amount.Zero, refrains=Amount.Many, verses=Amount.Many),
+    Rondo],
+    [Signature(bridges=Amount.Zero, codas=Amount.Zero, refrains=Amount.Zero, verses=Amount.Many),
+    Sequence],
+    [Signature(bridges=Amount.Zero, codas=Amount.Zero, refrains=Amount.Zero, verses=Amount.One),
+    Sequence]
 ]
 
 def get_song_logic(song):

@@ -14,7 +14,7 @@ Important=======================================================================
 
 SongTypes:
 -Create more song-types besides Traditional, but unsure yet
- -Rondo, AB, ABA?
+ -AB, ABA?
 
 Optional===========================================================================================================
  

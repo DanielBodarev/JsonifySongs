@@ -14,7 +14,9 @@ verses = [
 ]
 
 refrains = [
-    Refrain("Refren: We now have the refrain. Sing the refrain")
+    Refrain("Refren: 1We now have the refrain. Sing the refrain"),
+    Refrain("Refren: 2We now have the refrain. Sing the refrain"),
+    Refrain("Refren: 3We now have the refrain. Sing the refrain")
 ]
 
 song = Song()
