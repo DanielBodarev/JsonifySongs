@@ -7,7 +7,7 @@ class Traditional(ISongLogic):
         self.song = song
 
     def get_title(self):
-        first_verse = self.song.verses[0]
+        first_verse = self.song.verses[0].text
         title = SU.get_first_words_with_limits(first_verse)
         return title
 

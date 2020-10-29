@@ -5,15 +5,16 @@ from SongStructure.Song import Song
 from SongStructure.Verse import Verse
 from Common import Settings
 import os
+import re
 
 verses = [
-    Verse("This is verse one. It's a very good song"),
-    Verse("This is verse two. Hope you enjoy it too"),
-    Verse("This is verse three. It's all we can sing"),
+    Verse("1. This is verse one. It's a very good song"),
+    Verse("2. This is verse two. Hope you enjoy it too"),
+    Verse("3. This is verse three. It's all we can sing"),
 ]
 
 refrains = [
-    Refrain("We now have the refrain. Sing the refrain")
+    Refrain("Refren: We now have the refrain. Sing the refrain")
 ]
 
 song = Song()

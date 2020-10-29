@@ -17,10 +17,6 @@ SongTypes:
  -Rondo, AB, ABA?
 
 Optional===========================================================================================================
-
-Song:
--save verses without 1., 2.,R. etc. only the text
- -add the 1.,2.,R., later--and uniformly
  
  UI:
 -Ask for songbook name when program run
