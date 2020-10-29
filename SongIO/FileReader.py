@@ -20,5 +20,5 @@ def _split_song_string(song_string):
 
 extension_map = {
     "txt" : _read_txt_file,
-    "docx" : 
+    "docx" : _read_txt_file
 }

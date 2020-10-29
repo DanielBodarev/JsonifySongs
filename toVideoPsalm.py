@@ -4,6 +4,6 @@ from SongIO import FromFolder, SaveSongbook
 
 source_folder = Settings.misc.get("sourcefolder")
 
-song_arrays = get_song_array_from_folder(source_folder)
+song_arrays = FromFolder.get_song_array_from_folder(source_folder)
 songbook = JsonSongbook(song_arrays)
-save_songbook(songbook)
+SaveSongbook.save_songbook(songbook)
