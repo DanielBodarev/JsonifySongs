@@ -12,23 +12,9 @@ ReadFile:
 
 Important===========================================================================================================
 
-Settings:
--store path to output
--default songbook name
--what to append at end; "" for nothing
- -possible boolean to turn this feature on/off
--different sections: song, songbook, general
-
 SongTypes:
 -Create more song-types besides Traditional, but unsure yet
  -Rondo, AB, ABA?
- 
- JsonUtils:
--try no guid, or empty guid [generates guid + formats at creation of new song]
--ids might be necessary; [nah]
- -what is causing the * upon opening? does opening twice do the same thing? [see if it happens again]
--guid and videoduration are added automatically when file updated. no need to have it
--use regex to remove ""
 
 Optional===========================================================================================================
 
@@ -47,3 +33,6 @@ SongDecorator modules:
 Songbook:
 -create classes for various options within songbook 
  -like transition, text justification, etc
+ 
+Settings:
+-possible boolean to turn footer feature on/off

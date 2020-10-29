@@ -1,7 +1,7 @@
-from Common.Settings import text as textSettings
+from Common import Settings
 
-word_limit = textSettings.getint('titlewordlimit', fallback=7)
-char_limit = textSettings.getint('titlecharacterlimit', fallback=30)
+word_limit = Settings.song.getint('titlewordlimit', fallback=7)
+char_limit = Settings.song.getint('titlecharacterlimit', fallback=30)
 
 def get_first_words_with_limits(text, wlimit=word_limit, chlimit=char_limit):
     text = str(text)
