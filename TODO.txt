@@ -6,15 +6,12 @@ When get files:
 -see if uniform structure or varies
 
 ReadFile:
--module to read .docx or .ppt or whatever
 -module to identify and retrieve song parts
 
+Settings:
+-add read-from file to read all files
 
 Important===========================================================================================================
-
-SongTypes:
--Create more song-types besides Traditional, but unsure yet
- -AB, ABA?
 
 Optional===========================================================================================================
  

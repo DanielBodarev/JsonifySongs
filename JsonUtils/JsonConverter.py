@@ -5,7 +5,6 @@ from Common import Settings
 from SongLogic import SongLogicFactory
 
 from JsonUtils.JsonSong import JsonSong
-from JsonUtils.JsonSongbook import JsonSongbook
 
 def song_to_json_song(song):
     song_logic = SongLogicFactory.get_song_logic(song)
